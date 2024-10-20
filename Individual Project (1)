@@ -1,0 +1,47 @@
+using System;
+
+class Program
+{
+    static void Mian(string [] args)
+    {
+        Console.WriteLine("Enter the first number:");
+        string input1 = Console.ReadLine();
+
+        Console.WriteLine("Enter the second number:");
+        string input2 = Console.ReadLine();
+
+        DivideString(input1, input2);
+    }
+
+    static void DivideStrings(string num1, string num2)
+    {
+        try
+        {
+            int dividend = Convert.ToInt32(num1);
+            int divisor = Conver.ToInt32(num2);
+
+            int result = dividend / divisor;
+            Console.WriteLine($"The result of the division is: {result}");
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Error: One of the inputs is not a valid integer.");
+        }
+        catch (DivideByZeroException)
+        {
+            Console.WriteLine("Error: Divisiob by zero is not allowed.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An unexpected error occurred: {ex.Message});
+        }
+    }
+}
+
+        }
+        }
+        }
+        }
+    }
+    }
+}
